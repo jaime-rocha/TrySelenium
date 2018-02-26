@@ -1,9 +1,15 @@
 package firefoxBrowser;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 public class LocatorsIdentifiers {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		WebDriverManager.firefoxdriver().setup();
 		WebDriver driver = new FirefoxDriver();
 		
 		driver.get("https://login.salesforce.com/");
