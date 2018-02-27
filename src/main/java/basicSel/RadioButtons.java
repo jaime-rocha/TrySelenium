@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class RadioButtons {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
+
         WebDriverManager.firefoxdriver().setup();
         WebDriver driver = new FirefoxDriver();
         driver.get("http://www.echoecho.com/htmlforms10.htm");
@@ -39,7 +39,7 @@ public class RadioButtons {
         int sizeGroup2 = driver.findElements(By.xpath("//input[@name='group2']")).size();
         System.out.println("How many radio buttons are in group 2 on web page? " + sizeGroup2);
 
-        String attrib = " ";
+        String attrib = "";
         for (int x=0; x < sizeGroup1; x++) {
             driver.findElements(By.xpath("//input[@name='group1']")).get(x).click();
             attrib = driver.findElements(By.xpath("//input[@name='group1']")).get(x).getAttribute("value");
