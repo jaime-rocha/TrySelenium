@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 public class DropdownExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.spicejet.com//");
@@ -19,7 +19,7 @@ public class DropdownExample {
 		s.selectByValue("1");
 		s.selectByIndex(5);
 		s.selectByVisibleText("8");
-		
+
 		System.out.println("All static dropdown haven been choosen");
 		
 		//dynamic dropdown code, follow up
