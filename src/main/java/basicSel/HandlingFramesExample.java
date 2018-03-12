@@ -17,7 +17,7 @@ public class HandlingFramesExample {
         //How many iframes would have this web page?
         System.out.println(driver.findElements(By.tagName("iframe")).size());
 
-        //Going inside iframe and web elements actions
+        //Going inside iframe and web element actions
         driver.switchTo().frame(driver.findElement(By.className("demo-frame")));
         Actions a = new Actions(driver);
         WebElement source = driver.findElement(By.xpath("//*[@id='draggable']"));

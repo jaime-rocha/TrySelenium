@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class LocatorsIdentifiers {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		WebDriverManager.firefoxdriver().setup();
 		WebDriver driver = new FirefoxDriver();
 		

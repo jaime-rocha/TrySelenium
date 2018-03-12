@@ -1,13 +1,15 @@
 package basicSel;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class testit {
 
-public static void main(String[] args) throws InterruptedException {
-// TODO Auto-generated method stub
+public static void main(String[] args) {
+
+	WebDriverManager.chromedriver().setup();
 	WebDriver driver =new ChromeDriver();
 
 	driver.get("http://www.qaclickacademy.com/interview.php");

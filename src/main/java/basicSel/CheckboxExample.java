@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class CheckboxExample {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.spicejet.com//");

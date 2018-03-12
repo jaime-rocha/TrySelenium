@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class TC_Excercise1 {
+public class TC_Exercise1 {
     public static void main(String[] args) {
 
         WebDriverManager.firefoxdriver().setup();
